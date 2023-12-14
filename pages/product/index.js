@@ -5,7 +5,7 @@ import { fetchAxios } from "../../service/axios_client";
 import { createClient } from '@supabase/supabase-js'
 
 // Create a single supabase client for interacting with your database
-const supabase = createClient('https://knfitclombergpbakkao.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtuZml0Y2xvbWJlcmdwYmFra2FvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDI0NjMxOTcsImV4cCI6MjAxODAzOTE5N30.jmVz-tapwJlBZDOcG3uF264jdRn0q7d1zNG9MdqMn-s')
+const supabase = createClient('https://tdnjzbozwadslfmvkruy.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRkbmp6Ym96d2Fkc2xmbXZrcnV5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDI0Njg2MjksImV4cCI6MjAxODA0NDYyOX0.Dq_kZ0LbNB-vv4Ntk4z3FzTdWN-bKiVVdYfw4zwN1cA')
 
 const ProductPages = () => {
 
