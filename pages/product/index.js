@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { fetchAxios } from "../../service/axios_client";
+import { useRouter } from 'next/router'
 
 
 import { createClient } from '@supabase/supabase-js'
@@ -10,6 +11,8 @@ const supabase = createClient('https://tdnjzbozwadslfmvkruy.supabase.co', 'eyJhb
 const ProductPages = () => {
 
     const [dataProduct, setDataProduct] = useState([])
+
+    const router = useRouter()
 
 
     const fetchAPI = useCallback(async () => {
@@ -41,6 +44,8 @@ const ProductPages = () => {
         const { error } = await supabase
         .from('products')
         .insert({  product_name: item?.title})
+
+        router.push(`product/${item?.id}`)
 
     }
 
